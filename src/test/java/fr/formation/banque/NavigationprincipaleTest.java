@@ -80,7 +80,7 @@ public class NavigationprincipaleTest {
     // 8 | assertElementPresent | id=authIdentifiant | 
     {
       List<WebElement> elements = driver.findElements(By.id("authIdentifiant"));
-      assert(elements.size() > 0);
+      assert(!(elements.size() > 0));
     }
     // 9 | click | id=authMotdepasse | 
     driver.findElement(By.id("authMotdepasse")).click();
